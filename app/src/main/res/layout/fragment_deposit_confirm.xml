@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/l_deposit_confirmlayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.DepositConfirmFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:padding="@dimen/space10"
+        android:layout_marginTop="@dimen/space20"
+        android:text="@string/deposit_money_via"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="@dimen/space120"
+        android:layout_height="@dimen/space80"
+        android:src="@drawable/stripe"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space30"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentLeft="true"
+            android:text="@string/desposit_amount"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:text="$2,000.00"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fee"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:text="$5.00"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginVertical="@dimen/space5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space2"
+        android:layout_marginHorizontal="@dimen/space30"
+        android:background="@color/grey"/>
+    <RelativeLayout
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentLeft="true"
+            android:text="@string/desposit_amount"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:text="$2,005.00"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/depost_money_button"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="@dimen/space50"
+        android:background="@drawable/button_cicle_blue"/>
+
+</LinearLayout>

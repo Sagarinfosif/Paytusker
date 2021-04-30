@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/l_payoutlayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.PayoutFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Payment Method"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinner_back"
+                    android:entries="@array/payment_methods"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_down_arrow"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Currency"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinner_back"
+                    android:entries="@array/currancy"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_down_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/spinner_back"
+                android:hint="15$"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/space16"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_payout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/space50"
+            android:layout_marginBottom="@dimen/space20"
+            android:background="@drawable/button_cicle_blue"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

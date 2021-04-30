@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background_topbar"
+        android:background="@drawable/dashboard_topbar_color">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space5"
+            android:padding="@dimen/space5"
+            android:id="@+id/heading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_side_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/space2"
+            android:elevation="@dimen/space5"
+            android:padding="@dimen/space15"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/space2"
+            android:elevation="@dimen/space5"
+            android:padding="@dimen/space15"
+            android:src="@drawable/ic_left_arrow"
+            app:tint="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

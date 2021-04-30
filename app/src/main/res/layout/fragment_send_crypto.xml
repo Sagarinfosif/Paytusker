@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/l_send_cryptolayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SendCryptoFragment">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/requested_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:text="@string/recipient_address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:textStyle="bold" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/space10"
+        app:cardCornerRadius="@dimen/space16"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space16"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:padding="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:text="@string/crypto_transactions_take_moments"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:padding="@dimen/space10"
+        android:text="@string/send_dogetest_to_this_address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:text="@string/amount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_marginHorizontal="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            android:text="@string/dogetest_amount_2min"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/please_keep_atleast_1_DOGETEST"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/allowed_8_decimal_places"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/send_crypto_next"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_marginHorizontal="@dimen/space50"
+            android:background="@drawable/button_cicle_blue"/>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

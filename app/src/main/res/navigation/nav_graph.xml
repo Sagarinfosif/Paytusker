@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.paytusker.Fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.paytusker.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerationFragment"
+            app:destination="@id/registerationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerationFragment"
+        android:name="com.example.paytusker.Fragments.RegisterationFragment"
+        android:label="fragment_registeration"
+        tools:layout="@layout/fragment_registeration" >
+        <action
+            android:id="@+id/action_registerationFragment_to_email_RegistrationFragment"
+            app:destination="@id/email_RegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/email_RegistrationFragment"
+        android:name="com.example.paytusker.Fragments.RegisterTab.Email_RegistrationFragment"
+        android:label="fragment_email__registration"
+        tools:layout="@layout/fragment_email__registration" >
+        <action
+            android:id="@+id/action_email_RegistrationFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.paytusker.Fragments.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_congoFragment"
+            app:destination="@id/congoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congoFragment"
+        android:name="com.example.paytusker.Fragments.CongoFragment"
+        android:label="fragment_congo"
+        tools:layout="@layout/fragment_congo" >
+        <action
+            android:id="@+id/action_congoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

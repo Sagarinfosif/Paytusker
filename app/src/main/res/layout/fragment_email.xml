@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RegisterTab.EmailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16"
+        android:text="Enter Your Email"/>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        app:cardCornerRadius="@dimen/space16"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space10">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/space10"
+                android:hint="jatin@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/privacy_text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:gravity="center"
+        android:text="@string/intro_email_reg"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/email_button"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="@dimen/space50"
+        android:background="@drawable/button_cicle_blue"/>
+
+</LinearLayout>

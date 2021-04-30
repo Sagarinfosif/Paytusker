@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llayout"
+    tools:context=".Fragments.HomeFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back_color"
+                android:padding="@dimen/space10"
+                android:src="@drawable/thumb_up" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Jatin Sharma"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jbhardwaj304@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wallets"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            android:backgroundTint="@color/button_color"
+            app:cardCornerRadius="@dimen/space10"
+            app:cardElevation="@dimen/space10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space15"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/space5"
+                        android:padding="@dimen/space5"
+                        android:text="@string/available_balance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/space5"
+                        android:text="USD 94,444.53"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_double_right_arrow"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            android:id="@+id/my_activity"
+            android:backgroundTint="@color/grey"
+            app:cardCornerRadius="@dimen/space20"
+            app:cardElevation="@dimen/space10">
+
+
+                <RelativeLayout
+                    android:padding="@dimen/space15"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/space5"
+                        android:padding="@dimen/space5"
+                        android:text="@string/my_activity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_double_right_arrow"
+                        app:tint="@color/button_color" />
+
+                </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            android:id="@+id/dashboard_service_recycleview"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/dashboard_list"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"/>
+
+    </LinearLayout>
+
+

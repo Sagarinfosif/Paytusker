@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/l_req_reviewLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RequestandReviewFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space30"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/requested_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:text="@string/requested_amount"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:text="$20.00"
+            android:layout_toRightOf="@+id/requested_amount"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space10"
+        android:text="@string/add_note"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16"
+        android:textStyle="bold" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space80"
+        app:cardElevation="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        app:cardCornerRadius="@dimen/space16"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space20">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/add_note"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/space16"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+    <Button
+        android:id="@+id/req_money_transfer_button"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="@dimen/space50"
+        android:background="@drawable/button_cicle_blue"/>
+</LinearLayout>

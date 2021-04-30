@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.paytusker.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_depositFragment"
+            app:destination="@id/depositFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_walletsFragment"
+            app:destination="@id/walletsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myActivityFragment"
+            app:destination="@id/myActivityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_payoutFragment"
+            app:destination="@id/payoutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sendMoneyFragment"
+            app:destination="@id/sendMoneyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_requestMoneyFragment"
+            app:destination="@id/requestMoneyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cryptoFragment"
+            app:destination="@id/cryptoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositFragment"
+        android:name="com.example.paytusker.Fragments.DepositFragment"
+        android:label="fragment_deposit"
+        tools:layout="@layout/fragment_deposit" >
+        <action
+            android:id="@+id/action_depositFragment_to_depositWithStripeFragment"
+            app:destination="@id/depositWithStripeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositWithStripeFragment"
+        android:name="com.example.paytusker.Fragments.DepositWithStripeFragment"
+        android:label="fragment_deposit_with_stripe"
+        tools:layout="@layout/fragment_deposit_with_stripe" >
+        <action
+            android:id="@+id/action_depositWithStripeFragment_to_depositConfirmFragment3"
+            app:destination="@id/depositConfirmFragment3"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositConfirmFragment3"
+        android:name="com.example.paytusker.Fragments.DepositConfirmFragment"
+        android:label="fragment_deposit_confirm"
+        tools:layout="@layout/fragment_deposit_confirm" >
+        <action
+            android:id="@+id/action_depositConfirmFragment3_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walletsFragment"
+        android:name="com.example.paytusker.Fragments.WalletsFragment"
+        android:label="fragment_wallets"
+        tools:layout="@layout/fragment_wallets" />
+    <fragment
+        android:id="@+id/myActivityFragment"
+        android:name="com.example.paytusker.Fragments.MyActivityFragment"
+        android:label="fragment_my_activity"
+        tools:layout="@layout/fragment_my_activity" />
+    <fragment
+        android:id="@+id/payoutFragment"
+        android:name="com.example.paytusker.Fragments.PayoutFragment"
+        android:label="fragment_payout"
+        tools:layout="@layout/fragment_payout" >
+        <action
+            android:id="@+id/action_payoutFragment_to_reviewAndPayoutFragment"
+            app:destination="@id/reviewAndPayoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewAndPayoutFragment"
+        android:name="com.example.paytusker.Fragments.ReviewAndPayoutFragment"
+        android:label="fragment_review_and_payout"
+        tools:layout="@layout/fragment_review_and_payout" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.paytusker.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/sendMoneyFragment"
+        android:name="com.example.paytusker.Fragments.SendMoneyFragment"
+        android:label="fragment_send_money"
+        tools:layout="@layout/fragment_send_money" >
+        <action
+            android:id="@+id/action_sendMoneyFragment_to_sendAmountFragment"
+            app:destination="@id/sendAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestMoneyFragment"
+        android:name="com.example.paytusker.Fragments.RequestMoneyFragment"
+        android:label="fragment_request_money"
+        tools:layout="@layout/fragment_request_money" >
+        <action
+            android:id="@+id/action_requestMoneyFragment_to_requestAmountFragment"
+            app:destination="@id/requestAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestAmountFragment"
+        android:name="com.example.paytusker.Fragments.RequestAmountFragment"
+        android:label="fragment_request_amount"
+        tools:layout="@layout/fragment_request_amount" >
+        <action
+            android:id="@+id/action_requestAmountFragment_to_requestandReviewFragment"
+            app:destination="@id/requestandReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendAmountFragment"
+        android:name="com.example.paytusker.Fragments.SendAmountFragment"
+        android:label="fragment_send_amount"
+        tools:layout="@layout/fragment_send_amount" >
+        <action
+            android:id="@+id/action_sendAmountFragment_to_reviewandTransferFragment"
+            app:destination="@id/reviewandTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewandTransferFragment"
+        android:name="com.example.paytusker.Fragments.ReviewandTransferFragment"
+        android:label="fragment_reviewand_transfer"
+        tools:layout="@layout/fragment_reviewand_transfer" />
+    <fragment
+        android:id="@+id/requestandReviewFragment"
+        android:name="com.example.paytusker.Fragments.RequestandReviewFragment"
+        android:label="fragment_requestand_review"
+        tools:layout="@layout/fragment_requestand_review" />
+    <fragment
+        android:id="@+id/cryptoFragment"
+        android:name="com.example.paytusker.Fragments.CryptoFragment"
+        android:label="fragment_crypto"
+        tools:layout="@layout/fragment_crypto" >
+        <action
+            android:id="@+id/action_cryptoFragment_to_cryptoReceivedFragment"
+            app:destination="@id/cryptoReceivedFragment" />
+        <action
+            android:id="@+id/action_cryptoFragment_to_sendCryptoFragment"
+            app:destination="@id/sendCryptoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptoReceivedFragment"
+        android:name="com.example.paytusker.Fragments.CryptoReceivedFragment"
+        android:label="fragment_crypto_received"
+        tools:layout="@layout/fragment_crypto_received" />
+    <fragment
+        android:id="@+id/sendCryptoFragment"
+        android:name="com.example.paytusker.Fragments.SendCryptoFragment"
+        android:label="fragment_send_crypto"
+        tools:layout="@layout/fragment_send_crypto" />
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.example.paytusker.Fragments.ExchangeFragment"
+        android:label="fragment_exchange"
+        tools:layout="@layout/fragment_exchange" >
+        <action
+            android:id="@+id/action_exchangeFragment_to_reviewAndExhangeFragment"
+            app:destination="@id/reviewAndExhangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewAndExhangeFragment"
+        android:name="com.example.paytusker.Fragments.ReviewAndExhangeFragment"
+        android:label="fragment_review_and_exhange"
+        tools:layout="@layout/fragment_review_and_exhange" />
+</navigation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/l_receive_crypto_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.CryptoReceivedFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginTop="@dimen/space10">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/back_color"
+                    android:padding="@dimen/space10"
+                    android:src="@drawable/thumb_up" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Jatin Sharma"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jbhardwaj304@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/space20"
+                android:text="Receive Address Qr Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <ImageView
+
+                android:id="@+id/imageView_qrcode"
+                android:layout_width="@dimen/space200"
+                android:layout_height="@dimen/space200"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginVertical="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Only receive DOGETEST to this Address, receiving any other  coin will result in permanent loss."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/space20"
+                android:text="Receive Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/my_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginVertical="@dimen/space10"
+                android:backgroundTint="@color/grey"
+                app:cardCornerRadius="@dimen/space10"
+                app:cardElevation="@dimen/space5">
+
+                <TextView
+                    android:id="@+id/receive_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space10"
+                    android:text="qwert1234yuiop456cvbnmdfghj89098765bnm"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/copy_text"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:layout_marginHorizontal="@dimen/space50"
+                android:background="@drawable/button_cicle_blue"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/l_deposit_stripelayout"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.DepositWithStripeFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:layout_marginTop="@dimen/space50"
+        android:backgroundTint="@color/lightgrey"
+        android:elevation="@dimen/space10"
+        app:cardCornerRadius="@dimen/space15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:drawablePadding="@dimen/space10"
+                android:drawableTint="@color/button_color"
+                android:hint="card number"
+                android:inputType="number"
+                android:padding="@dimen/space16"
+                android:textSize="@dimen/text16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/lightgrey"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/button_color"
+                    android:hint="MM/YY"
+                    android:padding="@dimen/space16"
+                    android:textSize="@dimen/text16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/lightgrey"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_lock"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/button_color"
+                        android:hint="CVV"
+                        android:inputType="number"
+                        android:padding="@dimen/space16"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/button_confirm_deposit"
+        android:layout_marginTop="@dimen/space30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="@dimen/space50"
+        android:background="@drawable/button_cicle_blue"/>
+</LinearLayout>

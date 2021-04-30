@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l_req_amountlayout"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.RequestAmountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="15$"
+                android:layout_marginTop="@dimen/space10"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text16"
+                android:textAlignment="center"
+                android:background="@drawable/spinner_back"
+                android:layout_marginHorizontal="@dimen/space20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:text="Currency"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/spinner_back"
+                    android:entries="@array/currancy"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_req_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_marginBottom="@dimen/space20"
+            android:layout_marginHorizontal="@dimen/space50"
+            android:background="@drawable/button_cicle_blue"/>
+    </RelativeLayout>
+</LinearLayout>

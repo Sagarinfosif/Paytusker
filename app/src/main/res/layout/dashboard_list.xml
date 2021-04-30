@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space150"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:id="@+id/service_recycle_item"
+        android:layout_marginVertical="@dimen/space10"
+        android:backgroundTint="@color/grey"
+        app:cardCornerRadius="@dimen/space20"
+        app:cardElevation="@dimen/space5">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/image_service"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_circle_back"
+                android:src="@drawable/money_icon_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Deposit"
+                android:id="@+id/title_service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</LinearLayout>

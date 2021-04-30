@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/topbar2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/firstname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="jatin"
+                android:inputType="text"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/lastname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="sharma"
+                android:inputType="text"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="jatin@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space5">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    app:ccp_contentColor="@color/black"
+                    app:ccp_defaultNameCode="DE"
+                    app:ccp_defaultPhoneCode="91"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/edmobilenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space5"
+                    android:background="@android:color/transparent"
+                    android:hint="1234567890"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your Address"
+                android:inputType="text"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your city"
+                android:inputType="text"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/state"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space16"
+            app:cardElevation="@dimen/space10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your State"
+                android:inputType="text"
+                android:padding="@dimen/space16"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginTop="@dimen/space10"
+            android:text="@string/default_wallet"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginTop="@dimen/space10">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_back"
+                android:entries="@array/currancy"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="@string/country"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginTop="@dimen/space10">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_back"
+                android:entries="@array/country_name_list"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Update_profile"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space10"
+            android:text="@string/Update_Profile"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_marginHorizontal="@dimen/space50"
+            android:background="@drawable/button_cicle_blue"/>
+    </LinearLayout>
+
+</ScrollView>

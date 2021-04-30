@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l_loginlayout"
+    android:background="@color/lightgrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LoginFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space200"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/space10"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:padding="@dimen/space10"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/space10"
+                app:cardCornerRadius="@dimen/space16"
+                android:layout_marginBottom="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space10">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="jatin@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/space16"
+                    android:textColor="@color/black" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:padding="@dimen/space10"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/space10"
+                app:cardCornerRadius="@dimen/space16"
+                android:layout_marginBottom="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space10">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_padlock"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="*********"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/space16"
+                    android:textColor="@color/black" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgetpassword"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text16"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:layout_marginHorizontal="@dimen/space50"
+                android:background="@drawable/button_cicle_blue"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/noaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16"/>
+        <TextView
+            android:id="@+id/register"
+            android:layout_toRightOf="@+id/noaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_marginLeft="@dimen/space5"
+            android:textColor="@color/button_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text16"/>
+</RelativeLayout>
+</RelativeLayout>
